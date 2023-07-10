@@ -13,11 +13,15 @@ function InputForm(props) {
   const submitHandler = (event) => {
     event.preventDefault();
     props.onCalculate(userInput);
-
   };
 
   const resetHandler = () => {
-    setUserInput(initialState);
+    setUserInput({
+      "current-savings": '',
+      "yearly-contribution": '',
+      "expected-return": '',
+      duration: '',
+    });
   };
 
   const inputChangeHandler = (input, value) => {
