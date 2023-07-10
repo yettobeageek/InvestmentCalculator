@@ -37,7 +37,7 @@ function DataTable(props) {
               <td>
                 {formatter.format(
                   props.initialInvestment +
-                    yearData.yearlyContribution +
+                    yearData.yearlyContribution *
                     yearData.year
                 )}
               </td>
